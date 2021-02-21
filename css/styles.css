@@ -140,7 +140,7 @@ address p {
 }
 
 .container.footer {
- align-items: center;
+  align-items: center;
 }
 
 .footer-contacts-list {
@@ -178,6 +178,14 @@ address p {
   background-color: var(--background-dark);
   text-align: center;
   padding: 200px 0;
+  /*************Overlay HERO**********************/
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("../images/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .title {
@@ -214,9 +222,20 @@ address p {
   align-items: center;
 }
 
-.decision-list li {
+.decision-list-li { 
   width: 270px;
   height: 75;
+  
+}
+
+.decision-list-li::before {
+  display: inline-block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  outline: 1px solid red;
+
 }
 
 .decision-list :not(:last-child) {
@@ -294,7 +313,7 @@ address p {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 .team-section-name {
@@ -309,6 +328,88 @@ address p {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.social-link {
+  display: flex;
+  margin: 0 0 30px 0; 
+  outline: 1px solid olivedrab;
+}
+
+.social-link :not(:first-child) {
+  margin-left: 10px;
+}
+
+.social-link li {
+  /*display: block;*/
+  width: 44px;
+  height: 44px;
+  outline: 1px solid red;
+}
+
+.social-link-a {
+  
+  /*display: block;
+  /*width: 44px;
+  height: 44px;*/
+  /*border-radius: 50%;*/ 
+  /*align-items: center;*/
+  background-color: red;
+  
+}
+
+.social-link-a :hover {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--text-accent);
+  fill: var(--main-light); 
+  
+}
+
+.social-link-icon {
+  display: block;
+  /*fill: currentColor;*/
+  
+
+
+
+}
+
+.social-link-icon :hover {
+  /*fill: var(--main-light);
+  background-color: var(--text-accent);
+  outline: 1px solid blue;*/
+ 
+}
+
+
+.social-link-twitter {
+
+}
+
+.social-link-facebook {
+
+}
+
+.social-link-linkedin {
+  
+}
+
+
+
+.clients-section {
+  padding: 94px 0;
+}
+
+.clients-ul {
+  display: flex;
+}
+
+.clients-ul :not(:first-child) {
+  margin-left: 30px;
 }
 
 /**********  PORTFOLIO  *************/
