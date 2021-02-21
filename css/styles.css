@@ -105,12 +105,9 @@ address p {
   margin-right: 30px;
 }
 
-.header-contacts-list li{
-}
-
 .head-contacts.link {
   display: flex;
-   align-items: center;
+  align-items: center;
   justify-content: center;
 }
 
@@ -163,12 +160,8 @@ address p {
 }
 
 .footer-address-block {
-    margin-right: 70px;
-  }
-
-.footer-social-links-block {
-  
-} 
+  margin-right: 70px;
+}
 
 .footer-social-links-block p {
   font-weight: 700;
@@ -193,8 +186,6 @@ address p {
 .container.footer ul {
   display: flex;
 }
-
-
 
 .footer-contacts-list {
   margin: 0;
@@ -225,9 +216,6 @@ address p {
 .footer-contacts:focus {
   color: var(--text-accent);
 }
-
-
-
 
 /********************* MAIN (index.html)*************************/
 
@@ -308,7 +296,6 @@ address p {
   height: 120px;
   margin-bottom: 30px;
   outline: 1px solid red;
-
   background-position: center;
   background-color: var(--background-light);
   fill: var(--text-main-dark);
@@ -324,10 +311,6 @@ address p {
   margin: 0 0 30px 0;
   background-color: var(--background-light);
   fill: text-main-dark;
-}
-
-.decision-icon { 
-
 }
 
 .decision-item {
@@ -403,7 +386,6 @@ address p {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  /*padding: 10px 0;*/
 }
 
 .team-section-name {
@@ -453,7 +435,6 @@ address p {
   width: 44px;
   height: 44px;
   fill: var(--icon);
- /* background-color: currentColor;*/
 }
 
 .clients-section {
@@ -515,7 +496,7 @@ address p {
   padding: 6px 22px;  
   border: 1px solid var(--background-light);
   border-radius: 4px;
-  }
+}
 
 .project-filter-button:focus {
   color: var(--main-light);
@@ -534,7 +515,6 @@ address p {
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--card-set-gap));
   margin-right: calc(-1 * var(--card-set-gap));
-  /* box-shadow: none; */
 }
 
 .project-ul-li {
@@ -567,7 +547,6 @@ address p {
   letter-spacing: 0.06em;
   margin-top: 20px;
   margin-bottom: 4px;
-  /* box-shadow: none; */
 }
 
 .project-type {
@@ -576,6 +555,5 @@ address p {
   letter-spacing: 0.03em;
   color: var(--text-sub);
   margin-bottom: 20px;
-  /* box-shadow: none; */
 }
 
