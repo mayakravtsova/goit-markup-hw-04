@@ -157,6 +157,7 @@ address p {
   outline: none;
   line-height: 24px;
   letter-spacing: 0.03em;
+
 }
 
 .footer-contacts:visited {
@@ -171,6 +172,14 @@ address p {
   color: var(--text-accent);
 }
 
+.footer-social-links p {
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+
 /********************* MAIN (index.html)*************************/
 
 /********** MAIN - TITLE ***********/
@@ -179,6 +188,7 @@ address p {
   background-color: var(--background-dark);
   text-align: center;
   padding: 200px 0;
+
   /*************Overlay HERO**********************/
   max-width: 1600px;
   height: 600px;
@@ -223,10 +233,10 @@ address p {
   align-items: center;
 }
 
-.decision-list-li { 
-  width: 270px;
-  height: 75;
+.decision-list :not(:last-child) {
+  margin-right: 30px;
 }
+
 /*
 .decision-list-li::before {
   display: inline-block;
@@ -241,21 +251,20 @@ address p {
   fill: var(--text-main-dark);
 }
 */
-/*
+
 .decision-icon-div{
   display: flex;
   width: 270px;
   height: 120px;
+  justify-content: center;
   align-items: center;
-}
-*//*
-.decision-icon {
+  margin-bottom: 30px;
   background-color: var(--background-light);
-  fill: var(--text-main-dark);
-  background-position: center;
-}*/
-.decision-list :not(:last-child) {
-  margin-right: 30px;
+  fill: text-main-dark;
+}
+
+.decision-icon { 
+
 }
 
 .decision-item {
@@ -329,13 +338,12 @@ address p {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  padding: 10px 0;
+  /*padding: 10px 0;*/
 }
 
 .team-section-name {
   font-weight: 500;
-
-  margin: 0 0 10px 0;   
+  margin: 30px 0 10px 0;   
 }
 
 .team-section-position {
@@ -348,75 +356,39 @@ address p {
 
 .social-link {
   display: flex; 
-  margin: 0 0 30px 0; 
-  padding: 0;
-  outline: 1px solid olivedrab; 
-  
+  margin: 16px 0 30px 0; 
+  padding: 0;  
+}
+
+.social-link li {
+  color: var(--main-light); 
+}
+
+.social-link li :visited {
+  color: var(--main-light);
+}
+
+.social-link :hover, .social-link :focus {
+  border-radius: 50%;
+  fill: currentColor;
+  background-color: var(--text-accent);
+  outline: none;
 }
 
 .social-link :not(:first-child) {
-  /* margin-left: 10px; */
+  margin-left: 10px;
 }
+
 
 .social-link-a {
-display: block;
-
-/* 
-  outline: 1px solid red;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
- border-radius: 50%;
-  align-items: center;
-  background-color: red;
-  fill: var(--icon); */
-
+  fill: var(--icon);
+  background-color: currentColor;
 }
-
-.social-link-a :visited {
-  /*fill: currentColor;*/
-}
-
-.social-link-a :hover {
- /* display: flex;
-  width: 44px;
-  height: 44px;
-  align-items: center;
-  border-radius: 50%;
-  background-color: var(--text-accent);
-  fill: var(--main-light);
-  margin: auto;*//
-}
-
-.social-link-icon {
-/*margin: auto;*/
-/*left: 0%;
-right: 0%;
-top: 9.38%;
-bottom: 9.38%;*/
-}
-
-.social-link-icon :hover {
- /* fill: var(--main-light);
-  background-color: var(--text-accent);
-  outline: 1px solid blue;
- fill: red;*/
-}
-
-/*
-.social-link-twitter {
-
-}
-
-.social-link-facebook {
-
-}
-
-.social-link-linkedin {
-  
-}
-*/
-
 
 .clients-section {
   padding: 94px 0;
@@ -424,7 +396,7 @@ bottom: 9.38%;*/
 
 .clients-ul {
   display: flex;
-  
+  color: var(--icon);
 }
 
 .clients-ul :not(:first-child) {
@@ -433,7 +405,7 @@ bottom: 9.38%;*/
 
 .clients-ul :hover {
   fill: var(--text-accent);
-  border-color: var(--text-accent);
+  border-color: var(--text-accent); 
 }
 
 .clients-li {
@@ -442,22 +414,12 @@ bottom: 9.38%;*/
   justify-content: center;
   width: 170px;
   height: 90px;
-  fill: var(--icon);
+  fill: currentColor;
   border: 1px solid var(--icon);
   box-sizing: border-box;
   border-radius: 4px;
   cursor: pointer;
 }
-
-.clients-li :hover {
-  
-}
-
-.clients-icon :hover{
- 
-  
-}
-
 
 
 /**********  PORTFOLIO  *************/
