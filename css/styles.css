@@ -278,9 +278,23 @@ address p {
   align-items: center;
 }
 
-.decision-list :not(:last-child) {
+/* .container.decision :not(:last-child) {
+  margin-right: 30px;
+} */
+
+
+.decision-list-item {
   margin-right: 30px;
 }
+
+.decision-section-card {
+  margin: 0;
+}
+
+.decision-card-content {
+  margin: 0;
+}
+
 
 /*
 .decision-list-li::before {
@@ -318,15 +332,17 @@ address p {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
 }
 
 .decision-item-text {
+  display: block;
+  width: 270px;
   color: var(--text-sub);
   line-height: 24px;
   letter-spacing: 0.03em;
-  margin-top: 0px;
-
+  margin: 0;
+  text-transform: none;
 }
 
 /************ MAIN - SIBTITLES ***********/
@@ -432,7 +448,7 @@ address p {
   width: 44px;
   height: 44px;
   fill: var(--icon);
-  /*background-color: currentColor;*/
+ /* background-color: currentColor;*/
 }
 
 .clients-section {
@@ -513,6 +529,7 @@ address p {
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--card-set-gap));
   margin-right: calc(-1 * var(--card-set-gap));
+  /* box-shadow: none; */
 }
 
 .project-ul-li {
@@ -521,11 +538,21 @@ address p {
   margin-right: var(--card-set-gap);
   border: 1px solid var(--project-border);
   width: 370px;
+  
+}
+
+
+.project-ul :hover, .project-ul :focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-ul-li :hover, .project-ul-li :focus {
+  box-shadow: none;
 }
 
 .project-content {
   padding: 0 24px;
-  width: 370px;
+  width: 370px; 
 }
 
 .project-name {
@@ -535,6 +562,7 @@ address p {
   letter-spacing: 0.06em;
   margin-top: 20px;
   margin-bottom: 4px;
+  /* box-shadow: none; */
 }
 
 .project-type {
@@ -543,4 +571,9 @@ address p {
   letter-spacing: 0.03em;
   color: var(--text-sub);
   margin-bottom: 20px;
+  /* box-shadow: none; */
+}
+
+.no-shadow :hover {
+  /* box-shadow: none; */
 }
