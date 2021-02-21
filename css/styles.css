@@ -408,6 +408,10 @@ address p {
   fill: var(--main-light); 
 }
 
+.social-link :visited {
+  color: var(--main-light);
+}
+
 .social-link li {
   color: var(--main-light); 
 }
