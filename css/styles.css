@@ -180,8 +180,8 @@ address p {
   outline: none;
 }
 
-.footer-social-link-li .social-link-a{
-  fill: currentColor;
+.footer-social-link-li .social-link-a {
+  fill: var(--main-light);
 }
 
 
@@ -411,24 +411,24 @@ address p {
   display: flex; 
   margin: 16px 0 30px 0; 
   padding: 0; 
-  /*fill: var(--main-light);   */ 
+  fill: var(--main-light);   
 }
 /* 
 .social-link :visited {
   color: var(--main-light);
 } */
 
-.social-link li {
-  color: var(--main-light); 
+.social-link-li {
+  color: currentColor; /*var(--main-light)*/ 
 }
 
- .social-link li :visited {
+ .social-link-li :visited {
   color: currentColor; /*var(--main-light)*/
 } 
 
 .social-link :hover, .social-link :focus {
   border-radius: 50%;
-  fill: currentColor; /*var(--main-light)*/
+  fill: var(--main-light); /*var(--main-light)*/
   background-color: var(--text-accent);
   outline: none;
 }
@@ -436,7 +436,6 @@ address p {
 .social-link :not(:first-child) {
   margin-left: 10px;
 }
-
 
 .social-link-a {
   display: flex;
@@ -447,6 +446,10 @@ address p {
   fill: var(--icon);
   border-radius: 0%;
 }
+
+/* .social-link-a :visited {
+  fill: currentColor;
+} */
 
 .social-link-a :hover, .social-link-a :focus {
   border-radius: 0%;
@@ -539,7 +542,7 @@ address p {
   margin-top: var(--card-set-gap);
   margin-right: var(--card-set-gap);
   border: 1px solid var(--project-border);
-  width: 370px;
+  /* width: 370px; */
 }
 
 .project-ul :hover {
