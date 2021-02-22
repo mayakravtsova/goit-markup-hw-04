@@ -422,7 +422,7 @@ address p {
 
 .social-link :hover, .social-link :focus {
   border-radius: 50%;
-  fill: currentColor;
+  fill: var(--main-light); /*currentColor*/
   background-color: var(--text-accent);
   outline: none;
 }
