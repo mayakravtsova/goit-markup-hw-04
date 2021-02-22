@@ -192,13 +192,16 @@ a {
   text-decoration: none;  
 }
 
+/* 
 a :active {
-  color: none;
+  color: currentColor;
 }
 
 a :visited {
-  color: none;
-}
+  color: currentColor;
+} 
+*/
+
 /*
 Remove the inheritance of text transform in Edge and Firefox.
 1. Remove the inheritance of text transform in Firefox.

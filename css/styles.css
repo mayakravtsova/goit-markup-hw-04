@@ -283,21 +283,6 @@ address p {
   margin: 0;
 }
 
-
-/*
-.decision-list-li::before {
-  display: inline-block;
-  content: "";
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  outline: 1px solid red;
-  background-position: center;
-  background-color: var(--background-light);
-  fill: var(--text-main-dark);
-}
-*/
-
 .decision-icon-div{
   display: flex;
   width: 270px;
@@ -379,6 +364,10 @@ address p {
   background-color: var(--main-light); 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-section-card-img {
+  width: 270px;
 }
 
 .team-section-card-content {
