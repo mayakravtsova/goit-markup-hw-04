@@ -163,8 +163,6 @@ address p {
   margin-right: 70px;
 }
 
-/* ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg */
-
 .footer-social-links-block p {
   font-weight: 700;
   line-height: 16px;
@@ -174,7 +172,6 @@ address p {
 }
 
 .footer-social-link-li {
-  /* color: var(--footer-social-links);  */
   background-color: var(--footer-social-links);
   border-radius: 50%;
   outline: none;
@@ -183,7 +180,6 @@ address p {
 .footer-social-link-li .social-link-a {
   fill: var(--main-light);
 }
-
 
 .container.footer ul {
   display: flex;
@@ -405,18 +401,12 @@ address p {
   letter-spacing: 0.03em;
 }
 
-/* ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg */
-
 .social-link {
   display: flex; 
   margin: 16px 0 30px 0; 
   padding: 0; 
   fill: var(--main-light);   
 }
-/* 
-.social-link :visited {
-  color: var(--main-light);
-} */
 
 .social-link-li {
   color: currentColor; /*var(--main-light)*/ 
@@ -447,15 +437,9 @@ address p {
   border-radius: 0%;
 }
 
-/* .social-link-a :visited {
-  fill: currentColor;
-} */
-
 .social-link-a :hover, .social-link-a :focus {
   border-radius: 0%;
 }
-
-/* ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg */
 
 .clients-section {
   padding: 94px 0;
