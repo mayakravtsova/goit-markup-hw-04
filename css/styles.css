@@ -172,13 +172,22 @@ address p {
 }
 
 .footer-social-link-li {
+  
+  fill: var(--main-light);
   background-color: var(--footer-social-links);
   border-radius: 50%;
   outline: none;
 }
 
-.footer-social-link-li .social-link-a {
+.footer-social-link-li :visited {
   fill: var(--main-light);
+  background-color: var(--footer-social-links);
+}
+
+.footer-social-link-li :hover, .footer-social-link-li :focus{
+  background-color: var(--text-accent);
+  border-radius: 50%;
+  outline: none;
 }
 
 .container.footer ul {
@@ -357,9 +366,6 @@ address p {
 }
 
 .team-section-li {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;  */
   margin: 0 30px 0 0;
   background-color: var(--main-light); 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -399,27 +405,28 @@ address p {
 .social-link {
   display: flex; 
   margin: 16px 0 0 0; 
-  padding: 0; 
-  fill: var(--main-light);   
-}
-
-.social-link-li {
-  color: currentColor; /*var(--main-light)*/ 
-}
-
- .social-link-li :visited {
-  color: currentColor; /*var(--main-light)*/
-} 
-
-.social-link :hover, .social-link :focus {
-  border-radius: 50%;
-  fill: var(--main-light); /*var(--main-light)*/
-  background-color: var(--text-accent);
-  outline: none;
+  padding: 0;
 }
 
 .social-link :not(:first-child) {
   margin-left: 10px;
+}
+
+.social-link-li {
+  color: var(--main-light);  
+  fill: var(--icon);
+}
+
+.social-link-li :visited {
+  color: var(--main-light); 
+  fill: var(--icon);
+} 
+
+.social-link-li :hover, .social-link-li :focus {
+  border-radius: 50%;
+  fill: var(--main-light);
+  background-color: var(--text-accent);
+  outline: none;
 }
 
 .social-link-a {
@@ -428,12 +435,13 @@ address p {
   align-items: center;
   width: 44px;
   height: 44px;
-  fill: var(--icon);
+  fill: currentColor;
   border-radius: 0%;
 }
 
 .social-link-a :hover, .social-link-a :focus {
   border-radius: 0%;
+  fill: currentColor;
 }
 
 .clients-section {
@@ -442,7 +450,6 @@ address p {
 
 .clients-ul {
   display: flex;
-  /* color: var(--icon); */
 }
 
 .clients-ul :not(:first-child) {
@@ -454,18 +461,15 @@ address p {
   border-color: var(--text-accent); 
 }
 
+.clients-ul :focus  {
+  fill: var(--text-accent);
+  border-color: var(--text-accent); 
+  outline: none;
+}
+
 .clients-li {
   color: var(--icon);
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-  /* width: 170px;
-  height: 90px; */
-   fill: var(--icon);
-  /*border: 1px solid var(--icon);
-  box-sizing: border-box;
-  border-radius: 4px;
-  cursor: pointer; */
+  fill: var(--icon);
 }
 
 .clients-a {
@@ -476,7 +480,7 @@ address p {
   height: 90px;
   fill: currentColor;
   color: currentColor;
-  border: 1px solid var(--icon);
+  border: 1px solid currentColor;
   box-sizing: border-box;
   border-radius: 4px;
   cursor: pointer;
@@ -579,7 +583,6 @@ address p {
   font-size: 18px;
   line-height: 36px; 
   letter-spacing: 0.06em;
-  /* margin-top: 20px; */
   margin-bottom: 4px;
 }
 
@@ -588,5 +591,4 @@ address p {
   line-height: 30px;
   letter-spacing: 0.03em;
   color: var(--text-sub);
-  /* margin-bottom: 20px; */
 }
