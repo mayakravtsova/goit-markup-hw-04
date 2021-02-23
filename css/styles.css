@@ -442,7 +442,7 @@ address p {
 
 .clients-ul {
   display: flex;
-  color: var(--icon);
+  /* color: var(--icon); */
 }
 
 .clients-ul :not(:first-child) {
@@ -455,16 +455,36 @@ address p {
 }
 
 .clients-li {
+  color: var(--icon);
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  /* width: 170px;
+  height: 90px; */
+   fill: var(--icon);
+  /*border: 1px solid var(--icon);
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer; */
+}
+
+.clients-a {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 170px;
   height: 90px;
   fill: currentColor;
+  color: currentColor;
   border: 1px solid var(--icon);
   box-sizing: border-box;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.clients-a :visited {
+  fill: currentColor; 
+  color: currentColor;
 }
 
 
