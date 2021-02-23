@@ -449,7 +449,6 @@ address p {
 
 .social-link-a :hover, .social-link-a :focus {
   border-radius: 0%;
-  fill: currentColor;
 }
 
 .clients-section {
