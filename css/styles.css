@@ -190,6 +190,10 @@ address p {
   outline: none;
 }
 
+.footer-social-link-li .social-link-a :visited {
+  fill: var(--main-light);
+}
+
 .container.footer ul {
   display: flex;
 }
@@ -437,6 +441,10 @@ address p {
   height: 44px;
   fill: currentColor;
   border-radius: 0%;
+}
+
+.social-link-a :visited{
+  fill: var(--icon);
 }
 
 .social-link-a :hover, .social-link-a :focus {
