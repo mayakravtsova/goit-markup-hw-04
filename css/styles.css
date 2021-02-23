@@ -421,8 +421,7 @@ address p {
 }
 
 .social-link-li :visited {
-  color: var(--main-light); 
-  fill: var(--icon);
+  color: var(--icon); 
 } 
 
 .social-link-li :hover, .social-link-li :focus {
@@ -442,10 +441,6 @@ address p {
   color: currentColor;
   border-radius: 0%;
 }
-
-/* .social-link-a :visited{
-  fill: var(--icon);
-} */
 
 .social-link-a :hover, .social-link-a :focus {
   border-radius: 0%;
