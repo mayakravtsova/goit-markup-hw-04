@@ -357,13 +357,17 @@ address p {
 }
 
 .team-section-li {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;  */
   margin: 0 30px 0 0;
   background-color: var(--main-light); 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-section-card {
+  padding: 0 0 30px 0;
 }
 
 .team-section-card-img {
@@ -371,9 +375,11 @@ address p {
 }
 
 .team-section-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 
@@ -392,7 +398,7 @@ address p {
 
 .social-link {
   display: flex; 
-  margin: 16px 0 30px 0; 
+  margin: 16px 0 0 0; 
   padding: 0; 
   fill: var(--main-light);   
 }
@@ -495,12 +501,14 @@ address p {
   color: var(--main-light);
   background-color: var(--text-accent);
   outline: none;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-filter-button:hover {
   color: var(--main-light);
   background-color: var(--text-accent);
   outline: none;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-ul {
@@ -541,7 +549,7 @@ address p {
 }
 
 .project-content {
-  padding: 0 24px;
+  padding: 20px 24px;
 }
 
 .project-name {
@@ -549,7 +557,7 @@ address p {
   font-size: 18px;
   line-height: 36px; 
   letter-spacing: 0.06em;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-bottom: 4px;
 }
 
@@ -558,5 +566,5 @@ address p {
   line-height: 30px;
   letter-spacing: 0.03em;
   color: var(--text-sub);
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
